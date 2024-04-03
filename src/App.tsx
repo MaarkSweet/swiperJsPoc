@@ -4,6 +4,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import swiperData from './data/slides.json'
 
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -11,6 +12,8 @@ import './App.css'
 import Card from './components/Card'
 
 function App() {
+  console.log(swiperData);
+
 
   return (
     <div className="columns-2 w-screen" /* style={{ maxWidth: '100vh' }} */>
@@ -45,12 +48,13 @@ function App() {
           }}
           className="mySwiper"
         >
-          {[...Array(10)].map((_, index) => (
-            <SwiperSlide key={index}>
-              <Card />
+          {/* [...Array(10)] */}
+          {swiperData.map(({ id, title, description, image }) => (
+            <SwiperSlide key={id}>
+              <Card title={title} description={description} image={image} />
             </SwiperSlide>
-          ))
-          }</Swiper>
+          ))}
+        </Swiper>
 
       </div>
 

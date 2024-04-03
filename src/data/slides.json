@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Citron",
+    "description": "Le citron est un agrume. Son jus est très riche en vitamine C.",
+    "image": "citron.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Orange",
+    "description": "L'orange est un agrume. Elle est très riche en vitamine C.",
+    "image": "or.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Plante",
+    "description": "Les plantes sont des êtres vivants qui produisent de l'oxygène.",
+    "image": "plante.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Silck",
+    "description": "Le silck est une matière naturelle produite par les araignées.",
+    "image": "silck.jpg"
+  }
+]
